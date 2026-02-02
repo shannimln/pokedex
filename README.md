@@ -1,75 +1,72 @@
-# Nuxt Minimal Starter
+# Nuxt3 API Pokedex Assignment
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Project Description
 
-## Setup
+This project involves creating a simple Pokedex app using the [PokeApi](https://pokeapi.co/). It's designed to help you become familiar with the Nuxt3 framework and practice essential frontend skills.
 
-Make sure to install dependencies:
+## Required Tools and Documentation
 
-```bash
-# npm
-npm install
+- [PokeApi](https://pokeapi.co/)
+- [PokeApi Documentation](https://pokeapi.co/docs/v2)
+- [Nuxt3 Documentation](https://v3.nuxtjs.org/)
+- [Element Plus (for UI components)](https://element-plus.org/en-US/)
 
-# pnpm
-pnpm install
+### Optional (Bonus Tools)
 
-# yarn
-yarn install
+In our team, we frequently use the following tools. If you feel comfortable, try incorporating them into your project:
 
-# bun
-bun install
-```
+- [Pug (for templates)](https://pugjs.org/api/getting-started.html)
+- [SCSS (for styling)](https://sass-lang.com/documentation)
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+You can install these tools with the following commands:
 
 ```bash
-# npm
-npm run dev
+# Pug setup
+pnpm i -D pug-plain-loader pug
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+# SCSS setup
+pnpm i -D sass sass-loader
 ```
 
-## Production
+---
 
-Build the application for production:
+## Project Requirements
 
-```bash
-# npm
-npm run build
+### Core Features
 
-# pnpm
-pnpm build
+1. **Pokémon Search by Name**
 
-# yarn
-yarn build
+   - Create an input field where users can search for a Pokémon by name.
+   - Display the Pokémon's details (like name, type, height, weight, and description) in a card format, similar to the layout provided in the screenshot.
 
-# bun
-bun run build
-```
+2. **Filter by Type**
 
-Locally preview production build:
+   - Add buttons or checkboxes for each Pokémon type (e.g., Grass, Fire, Water, etc.).
+   - Allow users to filter Pokémon by their type, displaying only those that match the selected type(s).
+   - The filter should work alongside the search functionality, so users can search for a specific Pokémon within the selected type(s).
 
-```bash
-# npm
-npm run preview
+3. **Favorite Pokémon**
+   - Implement a way for users to mark Pokémon as favorites. Each Pokémon card should have a heart icon that toggles when clicked.
+   - Store favorite Pokémon locally using `localStorage` so that favorites persist across page reloads.
+   - Add a "Favorites" section where users can view their saved Pokémon. Allow users to remove Pokémon from this list by clicking the heart icon again.
 
-# pnpm
-pnpm preview
+### UI and Layout
 
-# yarn
-yarn preview
+- Design the layout to resemble the sample provided, with a clean, user-friendly interface.
+- Use Element Plus for consistent UI components (such as buttons, input fields, and cards).
+- Try to match the layout and structure without copying the design exactly.
 
-# bun
-bun run preview
-```
+### Bonus (Optional)
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Use **Pug** for templates and **SCSS** for styling to practice these additional tools.
+- Experiment with transitions or animations to make the user experience smoother, especially for adding/removing favorites.
+
+---
+
+## Submission Guidelines
+
+1. **Repository**: Push your code to a Git repository and share the link.
+2. **README**: Include a README.md file explaining the project setup, any configuration needed, and how to use the application.
+3. **Screenshots**: Add screenshots of the main screens (search, filtered results, and favorites) to the README.
+
+Good luck, and don't hesitate to reach out with any questions!
